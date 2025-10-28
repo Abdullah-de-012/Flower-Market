@@ -11,6 +11,18 @@
 .orange-text{
     color: #E95A08;
 }
+
+.regular-font{
+    font-size: 1.375rem;
+    color: rgba(0, 0, 0, 0.5);
+}
+.bold-font{
+    font-weight: bold;
+}
+.medium-font{
+    font-weight: 500;
+}
+
 /* Navbar */
 .navbar{
     justify-content: space-between;
@@ -20,6 +32,7 @@
 .navbar img{
     width: 135px;
     height: 82px;
+    
 }
 .items a{
     text-decoration: none;
@@ -38,9 +51,11 @@
     margin: 120px 150px;
 }
 .banner img{
-    width: 570px;
-    height: auto;
+    width: 50%;
 
+}
+.banner-title{
+    width: 50%;
 }
 .banner-title h1{
     font-size: 4rem;
@@ -50,5 +65,89 @@
 .banner-title  p{
     font-size: 1.4rem;
     margin-bottom: 0px;
+
+
+}
+/* Our Plants Section */
+.our-plants{
+    margin: 120px 150px 0px 150px;
+}
+.plant-title{
+    flex-direction: column;
+    text-align: center;
+}
+.plant-title h2{
+    font-size: 3.125rem;
+    font-weight: bold;
+    margin: 0px;
+   
+}
+.plant-title p{
+    margin: 16px 126px 49px 126px;
+}
+.card-container{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 30px 20px;
+    
+}
+.card{
+    text-align: center;
+
+}
+.card p h3{
+    font-size: 1.375rem;
+}
+.card img{
+    width: 100%;
+}
+/* .card p{
+    margin-bottom: 0px;
+}
+.card h3{
+    margin-top: 20px;
+} */
+.card button{
+    background-color: #E95A08;
+    border: none;
+    width: 100%;
+    padding: 19px 80px;
+    color: #FFFFFF;
+    font-weight: 600;
+    
+}
+
+/* Mobile Responsive */
+@media screen and (max-width:576px) {
+    .display-none{
+        display: none;
+    }
+    .navbar{
+        margin: auto;
+    }
+    .navbar img{
+        width: 63px;
+        height: 38px;
+    }
+    .banner{
+        flex-direction: column-reverse;
+        margin: auto;
+    }
+    .banner img{
+        width: 100%;
+    }
+    .banner-title{
+        width: 100%;
+    }
+    .banner-title h1{
+        font-size: 2rem;
+        font-weight: bold;
+        margin-top: 28x;
+        margin-left: 16px;
+    }
+    .banner-title p{
+        font-style: 0.875rem;
+        margin: 0px 16px;
+    }
 
 }
