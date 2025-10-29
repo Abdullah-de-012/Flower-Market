@@ -1,153 +1,254 @@
 /* Shared Styles */
-.display-flex{
+.display-flex {
     display: flex;
 }
-.gray-text{
+
+.gray-text {
     color: #8987A1;
 }
-.black-text{
+
+.black-text {
     color: #000000;
 }
-.orange-text{
+
+.orange-text {
     color: #E95A08;
 }
 
-.regular-font{
+.regular-font {
     font-size: 1.375rem;
     color: rgba(0, 0, 0, 0.5);
 }
-.bold-font{
+
+.bold-font {
     font-weight: bold;
 }
-.medium-font{
+
+.medium-font {
     font-weight: 500;
 }
 
 /* Navbar */
-.navbar{
+.navbar {
     justify-content: space-between;
     margin: 30px 150px;
     align-items: center;
 }
-.navbar img{
+
+.navbar img {
     width: 135px;
     height: 82px;
-    
+
 }
-.items a{
+
+.items a {
     text-decoration: none;
 
 }
-.items{
+
+.items {
     display: flex;
     gap: 48px;
 }
-#home{
+
+#home {
     color: #252432;
     font-weight: bold;
 }
-.banner{
+
+.banner {
     align-items: flex-end;
     margin: 120px 150px;
 }
-.banner img{
+
+.banner img {
     width: 50%;
 
 }
-.banner-title{
+
+.banner-title {
     width: 50%;
 }
-.banner-title h1{
+
+.banner-title h1 {
     font-size: 4rem;
     font-weight: bold;
     margin-bottom: 13px;
 }
-.banner-title  p{
+
+.banner-title p {
     font-size: 1.4rem;
     margin-bottom: 0px;
 
 
 }
+
 /* Our Plants Section */
-.our-plants{
+.our-plants {
     margin: 120px 150px 0px 150px;
 }
-.plant-title{
+
+.plant-title {
     flex-direction: column;
     text-align: center;
+    margin: auto;
 }
-.plant-title h2{
+
+.plant-title h2 {
     font-size: 3.125rem;
     font-weight: bold;
     margin: 0px;
-   
+
 }
-.plant-title p{
+
+.plant-title p {
     margin: 16px 126px 49px 126px;
 }
-.card-container{
+
+.card-container {
     display: grid;
-    grid-template-columns: repeat(4,1fr);
+    grid-template-columns: repeat(4, 1fr);
     gap: 30px 20px;
-    
+
 }
-.card{
+
+.card {
     text-align: center;
 
 }
-.card p h3{
+
+.card p h3 {
     font-size: 1.375rem;
 }
-.card img{
+
+.card img {
     width: 100%;
 }
-/* .card p{
-    margin-bottom: 0px;
-}
-.card h3{
-    margin-top: 20px;
-} */
-.card button{
+
+.card button {
     background-color: #E95A08;
     border: none;
     width: 100%;
-    padding: 19px 80px;
+    height: 50px;
     color: #FFFFFF;
     font-weight: 600;
+
+}
+/* Lover Section */
+.lover{
+    margin: 210px 150px 0px 150px;
+    gap: 60px;
+    position: relative;
+}
+.lover-title{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.lover h2{
+    margin-top: 38px;
+    margin-bottom: 0px;
+}
+.lover-title h2{
+    font-size: 3.125rem;
+}
+.lover-title li{
+    margin-top: 20px;
+}
+.badge{
+    width: 286px;
+    height: 286px;
+    position: absolute;
+    left: 360px;
+    top: -130px;
+    transform-origin: center;
+    will-change: transform;
+    animation: spin 3s linear infinite;
     
 }
+@keyframes spin {
+    from   { transform: rotate(0deg); }
+    to     { transform: rotate(360deg); }
+  }
 
 /* Mobile Responsive */
 @media screen and (max-width:576px) {
-    .display-none{
+
+    /* Nav Section */
+    .display-none {
         display: none;
     }
-    .navbar{
+
+    .navbar {
         margin: auto;
     }
-    .navbar img{
+
+    .navbar img {
         width: 63px;
         height: 38px;
     }
-    .banner{
+
+    .banner {
         flex-direction: column-reverse;
         margin: auto;
     }
-    .banner img{
+
+    .banner img {
         width: 100%;
     }
-    .banner-title{
+
+    .banner-title {
         width: 100%;
     }
-    .banner-title h1{
+
+    .banner-title h1 {
         font-size: 2rem;
         font-weight: bold;
         margin-top: 28x;
         margin-left: 16px;
     }
-    .banner-title p{
+
+    .banner-title p {
         font-style: 0.875rem;
         margin: 0px 16px;
     }
+
+    /* Our Plants section */
+    .our-plants{
+        margin: 65px 14px;
+    }
+    .plant-title p {
+        margin: 16px auto 28px auto;
+        
+
+    }
+
+    .card-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin: 0px;
+        gap: auto;
+    }
+    /* Lover Section */
+    .badge{
+        display: none;
+    }
+    .lover{
+        flex-direction: column;
+        margin: 16px;
+    }
+    .lover-img{
+        width: 100%;
+    }
+    .lover h2{
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-size: 1.5rem;
+    }
+    .lover-title li{
+        font-style: 0.875rem;
+        margin-bottom: 16px;
+    }
+    
 
 }
