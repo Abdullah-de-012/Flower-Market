@@ -189,8 +189,7 @@
 .latest-deal p{
     text-align: center;
     font-size: 1.25rem;
-    margin-top: 16px;
-    margin-bottom: 120px;
+    margin:16px 276px 120px 276px;
 }
 .deal-images{
     display: flex;
@@ -214,6 +213,8 @@
     align-items: center;
     justify-content: center;
     border-radius: 15px;
+    background-repeat: no-repeat;
+    background-size: cover;
     
 
 }
@@ -225,6 +226,8 @@
     align-items: center;
     justify-content: center;
     border-radius: 15px;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 .third-img{
     width: 70%;
@@ -329,6 +332,32 @@
         font-style: 0.875rem;
         margin-bottom: 16px;
     }
-    
+    /* Latest Deal Section */
+    .latest-deal {
+    margin: 143px 16px 39px 16px}
+    .latest-deal p{
+        margin:16px 28.5px 51.5px 28.5px ;
+    }
+    .deal-images{
+        flex-direction: column;
+        width: 100%;
+        height: 581px;
+    }
+    .img-group{
+        width: 100%;
+        height: 67%;
 
+    }
+    .third-img{
+        width: 100%;
+        height: 33%;
+    }
+    .latest-deal h3{
+        font-size: 1.25rem;
+        font-weight: 700;
+    }
+    .latest-deal a{
+        font-weight: 600;
+    }
+    
 }
