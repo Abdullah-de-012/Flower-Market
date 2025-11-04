@@ -283,9 +283,13 @@
     margin: 50px 160px 50px 160px;
     justify-content: space-around;
 }
+.company-title{
+    width: 309px;
+}
 .info-section p{
     font-size: 1.375rem;
     margin-top: 16px;
+
 }
 .info-section a{
     display: block;
@@ -391,7 +395,7 @@
     }
     /* Latest Deal Section */
     .latest-deal {
-    margin: 143px 16px 39px 16px}
+        margin: 143px 16px 39px 16px}
     .latest-deal p{
         margin:16px 28.5px 51.5px 28.5px ;
     }
@@ -415,6 +419,27 @@
     }
     .latest-deal a{
         font-weight: 600;
+    }
+    /* Footer Responsive */
+    .join-section{
+        height: 275px;
+    }
+    .join-section h2{
+        font-size: 1.25rem;
+    }
+    .info-section p{
+        font-size: 1rem;
+    }
+    .email{
+        padding: 15.5px 20px 15.5px 20px;
+    }
+    .info-section{
+        flex-direction: column;
+        margin-left: 20px;
+        gap: 24px;
+    }
+    .btn{
+        padding: 15.5px 12px 15.5px 12px;
     }
     
 }
